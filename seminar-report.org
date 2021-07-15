@@ -69,6 +69,9 @@
 ** Sentiment analysis
    Some attempts to extract subjective qualities—attitudes, emotions, sarcasm, confusion,
    suspicion—from text. Basically understanding human emotions.
+   #+CAPTION: Sentiment detection
+   #+NAME:   fig:SED-HR4049
+   [[./img/sentiment.png]]   
    
 ** Natural language generation
    It is sometimes described as the opposite of speech recognition or speech-to-text;
@@ -76,80 +79,6 @@
 
    #+LATEX: \clearpage
 
-* NLP use cases
-  Natural language processing is the driving force behind machine intelligence in
-  many modern real-world applications. Here are a few examples:
-** Spam detection
-   You may not think of spam detection as an NLP solution, but the best spam detection
-   technologies use NLP's text classification capabilities to scan emails for language
-   that often indicates spam or phishing. These indicators can include overuse of
-   financial terms, characteristic bad grammar, threatening language, inappropriate
-   urgency, misspelled company names, and more. Spam detection is one of a handful
-   of NLP problems that experts consider 'mostly solved' (although you may argue that
-   this doesn’t match your email experience).
-
-** Machine translation
-   Google Translate is an example of widely available NLP technology at work.
-   Truly useful machine translation involves more than replacing words in one language
-   with words of another.  Effective translation has to capture accurately the meaning
-   and tone of the input language and translate it to text with the same meaning and
-   desired impact in the output language. Machine translation tools are making good
-   progress in terms of accuracy. A great way to test any machine translation tool is
-   to translate text to one language and then back to the original.
-
-** Social media sentiment analysis
-   NLP has become an essential business tool for uncovering hidden data insights from
-   social media channels. Sentiment analysis can analyze language used in social media
-   posts, responses, reviews, and more to extract attitudes and emotions in response
-   to products, promotions, and events–information companies can use in product designs,
-   advertising campaigns, and more.
-
-** Text summarization
-   Text summarization uses NLP techniques to digest huge volumes of digital text and
-   create summaries and synopses for indexes, research databases, or busy readers who
-   don't have time to read full text. The best text summarization applications use
-   semantic reasoning and natural language generation (NLG) to add useful context
-   and conclusions to summaries.
-
-** Virtual assistants and chatbots
-   Virtual assistants such as Apple's Siri and Amazon's Alexa use speech recognition
-   to recognize patterns in voice commands and natural language generation to respond
-   with appropriate action or helpful comments. Chatbots perform the same magic in
-   response to typed text entries. The best of these also learn to recognize contextual
-   clues about human requests and use them to provide even better responses or options
-   over time. 
-   #+LATEX: \clearpage
-   
-* NLP tools and approaches
-  With the help of modern computer science tools and technology. NLP can be done easily.
-  Lot of high level library and framework are available publically to be used.
-
-** Python and the Natural Language Toolkit (NLTK)
-   The Python programing language provides a wide range of tools and libraries
-   for attacking specific NLP tasks. Many of these are found in the Natural Language
-   Toolkit, or NLTK, an open source collection of libraries, programs, and
-   education resources for building NLP programs.
-   The NLTK includes libraries for many of the NLP tasks listed above, plus libraries
-   for subtasks, such as sentence parsing, word segmentation, stemming and
-   lemmatization (methods of trimming words down to their roots), and tokenization
-   (for breaking phrases, sentences, paragraphs and passages into tokens that help
-   the computer better understand the text). It also includes libraries for implementing
-   capabilities such as semantic reasoning, the ability to reach logical conclusions
-   based on facts extracted from text.
-   
-** Statistical NLP, machine learning, and deep learning
-   The earliest NLP applications were hand-coded, rules-based systems that could perform
-   certain NLP tasks, but couldn't easily scale to accommodate a seemingly endless stream
-   of exceptions or the increasing volumes of text and voice data.
-   Enter statistical NLP, which combines computer algorithms with machine learning and
-   deep learning models to automatically extract, classify, and label elements of text
-   and voice data and then assign a statistical likelihood to each possible meaning of
-   those elements. Today, deep learning models and learning techniques based on
-   convolutional neural networks (CNNs) and recurrent neural networks (RNNs) enable
-   NLP systems that 'learn' as they work and extract ever more accurate meaning from
-   huge volumes of raw, unstructured, and unlabeled text and voice data sets. 
-   #+LATEX: \clearpage
-   
 * NLP Challenges
   NLP is a powerful tool with huge benefits, but there are still a number of Natural
   Language Processing limitations and problems:
@@ -231,34 +160,112 @@
    mind does. As they grow and strengthen, we may have solutions to some of these
    challenges in the near future.
    #+LATEX: \clearpage   
+   
+* NLP use cases
+  Natural language processing is the driving force behind machine intelligence in
+  many modern real-world applications. Here are a few examples:
+** Spam detection
+   You may not think of spam detection as an NLP solution, but the best spam detection
+   technologies use NLP's text classification capabilities to scan emails for language
+   that often indicates spam or phishing. These indicators can include overuse of
+   financial terms, characteristic bad grammar, threatening language, inappropriate
+   urgency, misspelled company names, and more. Spam detection is one of a handful
+   of NLP problems that experts consider 'mostly solved' (although you may argue that
+   this doesn’t match your email experience).
 
+** Machine translation
+   Google Translate is an example of widely available NLP technology at work.
+   Truly useful machine translation involves more than replacing words in one language
+   with words of another.  Effective translation has to capture accurately the meaning
+   and tone of the input language and translate it to text with the same meaning and
+   desired impact in the output language. Machine translation tools are making good
+   progress in terms of accuracy. A great way to test any machine translation tool is
+   to translate text to one language and then back to the original.
+
+** Social media sentiment analysis
+   NLP has become an essential business tool for uncovering hidden data insights from
+   social media channels. Sentiment analysis can analyze language used in social media
+   posts, responses, reviews, and more to extract attitudes and emotions in response
+   to products, promotions, and events–information companies can use in product designs,
+   advertising campaigns, and more.
+
+** Text summarization
+   Text summarization uses NLP techniques to digest huge volumes of digital text and
+   create summaries and synopses for indexes, research databases, or busy readers who
+   don't have time to read full text. The best text summarization applications use
+   semantic reasoning and natural language generation (NLG) to add useful context
+   and conclusions to summaries.
+
+** Virtual assistants and chatbots
+   Virtual assistants such as Apple's Siri and Amazon's Alexa use speech recognition
+   to recognize patterns in voice commands and natural language generation to respond
+   with appropriate action or helpful comments. Chatbots perform the same magic in
+   response to typed text entries. The best of these also learn to recognize contextual
+   clues about human requests and use them to provide even better responses or options
+   over time. 
+   #+LATEX: \clearpage
+   
+* NLP tools and approaches
+  #+CAPTION: NLP principles
+  #+NAME:   fig:SED-HR4049
+  [[./img/nlp-jumbo.png]]     
+  With the help of modern computer science tools and technology. NLP can be done easily.
+  Lot of high level library and framework are available publically to be used.
+
+** Python and the Natural Language Toolkit (NLTK)
+   The Python programing language provides a wide range of tools and libraries
+   for attacking specific NLP tasks. Many of these are found in the Natural Language
+   Toolkit, or NLTK, an open source collection of libraries, programs, and
+   education resources for building NLP programs.
+   The NLTK includes libraries for many of the NLP tasks listed above, plus libraries
+   for subtasks, such as sentence parsing, word segmentation, stemming and
+   lemmatization (methods of trimming words down to their roots), and tokenization
+   (for breaking phrases, sentences, paragraphs and passages into tokens that help
+   the computer better understand the text). It also includes libraries for implementing
+   capabilities such as semantic reasoning, the ability to reach logical conclusions
+   based on facts extracted from text.
+   
+** Statistical NLP, machine learning, and deep learning
+   The earliest NLP applications were hand-coded, rules-based systems that could perform
+   certain NLP tasks, but couldn't easily scale to accommodate a seemingly endless stream
+   of exceptions or the increasing volumes of text and voice data.
+   Enter statistical NLP, which combines computer algorithms with machine learning and
+   deep learning models to automatically extract, classify, and label elements of text
+   and voice data and then assign a statistical likelihood to each possible meaning of
+   those elements. Today, deep learning models and learning techniques based on
+   convolutional neural networks (CNNs) and recurrent neural networks (RNNs) enable
+   NLP systems that 'learn' as they work and extract ever more accurate meaning from
+   huge volumes of raw, unstructured, and unlabeled text and voice data sets. 
+   #+LATEX: \clearpage
+   
 * Products based on NLP
 ** Amazon's Alexa
-   #+CAPTION: Variant alexa products by amazon
-   #+NAME:   fig:SED-HR4049
-   [[./img/alexa.png]]
    Alexa is Amazon’s all-knowing, interactive voice assistant. Available on Amazon’s
    lineup of Echo speakers, smart thermostats, soundbars, lamps and lights, and right
    on your phone through the Alexa app, Alexa can do quick math for you, launch your
    favorite playlists, check news and weather, and control many of your home’s smart products.
    In this guide, we explain where Alexa comes from, exactly how Alexa works, where
    Alexa gets her name, and more.
+   #+CAPTION: Variant alexa products by amazon
+   #+NAME:   fig:SED-HR4049
+   [[./img/alexa.png]]   
   
 ** Apple's Siri
-   #+CAPTION: Siri running on iPhone
-   #+NAME:   fig:SED-HR4049
-   [[./img/siri.png]]
    Siri, Apple's personal digital assistant, uses machine learning and natural speech
    to answer questions, return relevant search information, perform actions and more.
+   #+CAPTION: Siri running on iPhone
+   #+NAME: fig:google-assistant  
+   [[./img/siri.png]]
 
 ** Google voice assistant
-   #+CAPTION: Sundar Pichai (CEO of google) introducing google assistant
-   #+NAME:   fig:google-assistant
-   [[./img/google-assistant.png]]
    Google Assistant offers voice commands, voice searching, and voice-activated
    device control, letting you complete a number of tasks after you've said the
    "OK Google" or "Hey Google" wake words. It is designed to give you conversational
    interactions. Google Assistant will: Control your devices and your smart home
+   #+CAPTION: Sundar Pichai (CEO of google) introducing google assistant
+   #+NAME: fig:SED-HR4049
+   [[./img/google-assistant.png]]
+
    #+LATEX: \clearpage
   
 * Lojban
@@ -286,17 +293,38 @@
    - an entertaining medium to communicate with friends or create art
    - a domain for exploring the intersection of human language and software
 
-   #+LATEX: \clearpage    
-    
-
-
-
-
-
-    
-
+** Lojban applications
+   While the initial aim of the Loglan project was to investigate linguistic relativity,
+   the active Lojban community recognizes additional applications for the language,
+   including:
+   - Improved human–human communication, due to the logical and unambiguous structure
+     and greater means of expression (use as a speakable language)
+     - Eliminating syntactic ambiguity in language
+   - Use as an educational tool
+   - Research in artificial intelligence and machine understanding
+     - Improved human–computer communication, storage ontologies, and computer
+       translation of natural language text
+   - Research in linguistics
+   - Use as an academic language, such as in science or philosophy
+   #+LATEX: \clearpage
    
 * Conclusion
+  NLP and machine learning applications play a pivotal role in supporting machine-human
+  communications. With more research in this sphere, there are more developments to make
+  machines smarter at learning and understanding the human language.
+  
+  NLP is one of the growing technologies. With constant innovation and research going
+  on in this field, it is only expected to grow in the future. Since this is such an
+  upcoming field, there is a dire need for skilled professionals. If you are interested
+  in working on making computers learn and understand human language, then this is a
+  good time to upskill yourself. NLP offers good prospects and is a high paying field.
+
+  Coding Elements offers courses in technologies like Python for Data Science, Data
+  Science with R, Machine Learning and Deep Learning, Full Stack Web Development, Mobile
+  App Development. Their curriculum is created based on the latest industry trends and
+  is taught by expert faculty. We provide the best LIVE classroom and Online classes.
+  The classes are very flexible and come with an access period of 4 years.
+  #+LATEX: \clearpage    
   
 * References
   - https://en.wikipedia.org/wiki/Natural-language-processing   
