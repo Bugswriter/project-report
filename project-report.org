@@ -1,3 +1,7 @@
+#+LATEX_HEADER: \linespread{1.5}
+#+LATEX_HEADER: \usepackage[margin=1.5in]{geometry}
+#+LATEX_HEADER: \usepackage{mathptmx}
+
 * Introduction
   Virtual self driving car will be an educational reinforcement learning project built to
   improve the existing driver assistance in most new cars on the road today. We all imagined
