@@ -1,4 +1,3 @@
-
 * Introduction
   Virtual self driving car will be an educational reinforcement learning project built to
   improve the existing driver assistance in most new cars on the road today. We all imagined
